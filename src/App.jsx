@@ -4,7 +4,7 @@ import ScreeningPage from "./pages/ScreeningPage";
 import hero from "./assets/hero.png";
 import FeaturesSection from "./components/FeaturesSection";
 import Footer from "./components/Footer";
-import CtaBanner from "./components/CtaBanner";
+import CtaBanner from "./components/CTABanner";
 import Button from "./components/Button";
 
 export default function App() {
