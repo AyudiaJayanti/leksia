@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Linotte';
+  src: url('fonts/Linotte-Heavy.otf') format('truetype');
+  font-weight: 700; /* Tebal */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2. Daftarkan Varian REGULAR (Baru) */
+@font-face {
+  font-family: 'Linotte';
+  src: url('fonts/Linotte-Regular.otf') format('truetype'); /* <-- Sesuaikan nama & ekstensi file regulermu */
+  font-weight: 400; /* Normal/Reguler */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 3. Sistem Tema Tailwind v4 (Tetap sama) */
+@theme {
+  --font-linotte: 'Linotte', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+
+  --color-brand: #925FF0;
+  --color-brand-hover: #7e4ad4;
+}
+
+@keyframes bounceSlow {
+  0%, 100% { transform: translateY(0) scale(1.1); }
+  50% { transform: translateY(-8px) scale(1.1); }
+}
+
+.animate-bounce-slow {
+  animation: bounceSlow 3s ease-in-out infinite;
+}

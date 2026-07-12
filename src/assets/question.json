@@ -1,0 +1,8 @@
+[
+  { "id": 1, "question": "Apakah anak mengalami kesulitan dalam mengeja kata?" },
+  { "id": 2, "question": "Apakah anak mengalami atau pernah mengalami kesulitan dalam mempelajari nama-nama huruf?" },
+  { "id": 3, "question": "Apakah anak mengalami atau pernah mengalami kesulitan belajar fonik (membunyikan atau melafalkan huruf/kata)?" },
+  { "id": 4, "question": "Apakah anak membaca dengan lambat?" },
+  { "id": 5, "question": "Apakah kemampuan membaca anak berada di bawah tingkat kelasnya saat ini?" },
+  { "id": 6, "question": "Apakah anak membutuhkan bantuan tambahan di sekolah karena adanya masalah dalam membaca dan mengeja?" }
+]
