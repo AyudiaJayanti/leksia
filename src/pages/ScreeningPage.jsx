@@ -1,6 +1,5 @@
 import { useState, useRef } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
-import html2canvas from "html2canvas";
 import questions from "../assets/question.json";
 
 const SHARED_OPTIONS = [
