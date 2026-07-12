@@ -27,11 +27,12 @@ export default function ScreeningPage({ onBackToHome }) {
   const [isLoadingAi, setIsLoadingAi] = useState(false);
   
   const areaHasilRef = useRef(null);
-
+  
+  //Fitur untuk menghitung total skor berdasarkan jawaban pertanyaan
   const hitungTotalSkor = (daftarJawaban) => {
     return Object.values(daftarJawaban).reduce((total, jawaban) => total + (SCORE_MAP[jawaban] || 0), 0);
   };
-
+  //Fitur memanggil AI dengan menggunkan model Gemini
   const panggilAI = async (daftarJawaban) => {
     setIsLoadingAi(true);
     try {
@@ -44,7 +45,7 @@ export default function ScreeningPage({ onBackToHome }) {
       });
 
       const totalSkor = hitungTotalSkor(daftarJawaban);
-
+      // Deklarasi var prompt dengan menyimpan prompt yang akan dikirimkan ke model AI
       const prompt = `
         Anda adalah pakar pembelajaran inklusi anak. Berdasarkan hasil kuesioner skor ${totalSkor}/30 dan data ini:
         ${questions.map((q) => `- ${q.question}: ${daftarJawaban[q.id]}`).join("\n")}
@@ -93,7 +94,6 @@ export default function ScreeningPage({ onBackToHome }) {
       setCurrentQuestion(currentQuestion - 1);
     }
   };
-
 
   const totalSkorAkhir = hitungTotalSkor(answers);
 
