@@ -6,7 +6,7 @@ export default function FeaturesSection() {
         Bersama Leksia, kita ciptakan ruang belajar yang ramah 📖 dan menyenangkan ✨ bagi anak melalui skrining adaptif, pemetaan profil literasi 📊, dan rekomendasi aktivitas bermain 🎁 yang menumbuhkan rasa percaya diri.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-x-6 pt-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-x-6 pt-6 sm:pt-4">
         <div className="relative bg-brand-hover rounded-3xl p-6 text-left shadow-md hover:shadow-xl transition-all duration-200 transform hover:-translate-y-1 flex flex-col justify-end pt-12 min-h-[240px]">
           <div className="absolute -top-6 left-6 w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-3xl shadow-md border-2 border-indigo-100 transform -rotate-12">
             🚀
